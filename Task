@@ -1,0 +1,11 @@
+print(all([False,True,True]))
+print(all([True,True,True]))
+
+a = '11.334.6.sd'
+print(all(i.isdigit() for i in a))
+
+adrss1 = '01004, город Киев, вул.Терещенкiвска,10'
+adrss2 = '01004, город Киев, вул.Терещенкiвска'
+print(any(map(str.isdigit, adrss1.rsplit(' ',1))))
+print(any(map(str.isdigit, adrss2.rsplit(' ',1))))
+
